@@ -1,0 +1,6 @@
+ecommerce_data_insights:
+  outputs:
+    dev:
+      type: duckdb
+      path: '../data/ecommerce.db'
+  target: dev

@@ -1,0 +1,25 @@
+# 🧩 Ignore secrets and credentials
+secrets.toml
+.env
+*.key
+*.pem
+
+# 🧩 Ignore Python environment and cache
+.venv/
+__pycache__/
+*.pyc
+
+# 🧩 Ignore dbt build artifacts
+target/
+dbt_packages/
+logs/
+
+# 🧩 Ignore local DuckDB files and datasets
+data/*.db
+data/*.duckdb
+*.csv
+
+# 🧩 Ignore system junk
+.DS_Store
+.idea/
+.vscode/

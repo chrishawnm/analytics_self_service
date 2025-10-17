@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: metricflow_time_spine
+    description: "Provides a continuous daily date spine for MetricFlow-based metrics."
+    config:
+      schema: utilities
+    columns:
+      - name: date_day
+        description: "A sequential list of dates with daily granularity used for metric time series alignment."

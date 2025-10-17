@@ -1,0 +1,61 @@
+version: 2
+
+semantic_models:
+  - name: user_events
+    model: ref('silver_user_events')
+    description: "Semantic model representing cleaned user event data."
+
+    entities:
+      - name: user_id
+        type: primary
+      - name: session_id
+        type: foreign
+
+    # ✅ Use 'dimensions' instead of 'time_dimensions'
+    dimensions:
+      - name: event_date
+        type: time
+        type_params:
+          time_granularity: day
+        description: "Date when the event occurred"
+
+    measures:
+      - name: active_users
+        description: "Number of unique users active during the time period"
+        agg: count_distinct
+        expr: user_id
+        agg_time_dimension: event_date
+
+      - name: purchase_events
+        description: "Count of purchase events"
+        agg: count
+        expr: event_id
+        agg_time_dimension: event_date
+
+    defaults:
+      agg_time_dimension: event_date
+
+
+metrics:
+  - name: active_users
+    label: Active Users
+    description: "Unique active users over a given time period"
+    type: simple
+    type_params:
+      measure: active_users
+
+  - name: purchase_users
+    label: Purchase Users
+    description: "Unique users who made a purchase"
+    type: simple
+    type_params:
+      measure: active_users
+    filter: event_type = 'purchase'
+
+  - name: conversion_rate
+    label: Conversion Rate
+    description: "Ratio of purchase users to active users"
+    type: derived
+    type_params:
+      metrics: [purchase_users, active_users]
+      expr: "purchase_users / nullif(active_users, 0)"
