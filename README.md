@@ -13,6 +13,7 @@ To run please complete the following:
 Here's a live demo on Google Drive:  
 🎥 [Watch the demo video here](https://drive.google.com/file/d/1aYReSJDkMMdt6Fn1458VVhQp2DXTl7jI/view?usp=drive_link)
 
-<embed src="https://raw.githubusercontent.com/USERNAME/REPO/main/Demo of Streamlit App - AI Idea.pdf" width="100%" height="600px" />
+📄 [View the Streamlit App PDF](https://github.com/chrishawnm/analytics_self_service/raw/main/Demo%20of%20Streamlit%20App%20-%20AI%20Idea.pdf)
+
 
 
