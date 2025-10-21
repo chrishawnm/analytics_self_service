@@ -10,10 +10,9 @@ To run please complete the following:
 
 ## 🎬 Demo Video
 
-<video width="640" height="360" controls>
-  <source src="https://raw.githubusercontent.com/chrishawnm/analytics_self_service/main/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Here's a live demo on Google Drive:  
+🎥 [Watch the demo video here](https://drive.google.com/file/d/1aYReSJDkMMdt6Fn1458VVhQp2DXTl7jI/view?usp=drive_link)
 
-Or open it directly:  
-🎥 [Watch the demo video here](https://github.com/chrishawnm/analytics_self_service/raw/main/demo.mp4)
+<embed src="https://raw.githubusercontent.com/USERNAME/REPO/main/Demo of Streamlit App - AI Idea.pdf" width="100%" height="600px" />
+
+
