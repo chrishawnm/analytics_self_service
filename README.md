@@ -1,11 +1,11 @@
 # analytics_self_service
 
 To run please complete the following:
-1. Open the github repo in <b> <u> Codespace </u> </b>
-2. create a <b> <u> .streamlit  </u> </b> folder in the main folder <b>  <u> analytics_self_service  </u> </b>
-3. create a <b> <u> secrets.toml  </u> </b> file and add it to the .streamlit folder
-4. In that file add your own OpenAI API key and have it set as <b> <u>  OPENAI_API_KEY=" OpenAI API Secret Key "  </u> </b>
-5. then in the terminal you will run <b> <u>  streamlit run app.py --server.port 4366  </u> <b/>
+1. Open the github repo in <b><u> Codespace </u> </b>
+2. create a <b><u> .streamlit  </u> </b> folder in the main folder <b><u> analytics_self_service  </u></b>
+3. create a <b><u> secrets.toml  </u></b> file and add it to the .streamlit folder
+4. In that file add your own OpenAI API key and have it set as <b><u>  OPENAI_API_KEY=" OpenAI API Secret Key "  </u></b>
+5. then in the terminal you will run <b><u>  streamlit run app.py --server.port 4366  </u></b>
 6. You should not be able to see the streamlit tool!
 
 ## 🎬 Demo Video
